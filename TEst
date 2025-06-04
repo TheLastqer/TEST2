@@ -1,15 +1,5 @@
-    local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-    local Window = Library:NewWindow("Script")
-    
-    local Tab = Window:NewSection("Credits: FxZ Hub")
 
-    Tab:CreateToggle("AUTO UPGRADE", function(no)
-    _G.GetWins = no
-    while _G.GetWins== true do
-        wait() 
-        game:GetService("ReplicatedStorage").Events.ClickMoney:FireServer()
-
-2
+game:GetService("ReplicatedStorage").Events.ClickMoney:FireServer()
 
 local args = {
     [1] = 2,
@@ -17,9 +7,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.Upgrade:FireServer(unpack(args))
-
-
-1
 
 local args = {
     [1] = 1,
@@ -83,34 +70,3 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.Upgrade:FireServer(unpack(args))
-
-    end
-    end)
-
-    Tab:CreateToggle("AUTO PRESTIGE", function(no)
-    _G.GetWins = no
-    while _G.GetWins== true do
-        wait() 
-        loadstring(game:HttpGet('https://pastefy.app/QaWgCdsg/raw'))()
-
-    end
-    end)
-
-    Tab:CreateToggle("CLICK GEM", function(no)
-    _G.GetWins = no
-    while _G.GetWins== true do
-        wait() 
-        loadstring(game:HttpGet('https://pastefy.app/LNZvZxNT/raw'))()
-
-    end
-    end)
-
-    local Tab = Window:NewSection("Links")
-    
-    Tab:CreateButton("Discord Group", function()
-    print("HI")
-    
-    setclipboard("https://discord.gg/f9CEfBPJ")
-    toclipboard("https://discord.gg/f9CEfBPJ")
-    
-    end)
