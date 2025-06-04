@@ -34,7 +34,7 @@ game:GetService("ReplicatedStorage").Events.Upgrade:FireServer(unpack(args))
     end
     end)
 
-     Tab:CreateToggle("INF ALL", function(no)
+     Tab:CreateToggle("AUTO PRESTIGE", function(no)
     _G.GetWins = no
     while _G.GetWins== true do
         wait() 
@@ -69,7 +69,7 @@ game:GetService("ReplicatedStorage").Events.Prestige.PrestigeUpgrade:FireServer(
     end
     end)
 
-    Tab:CreateToggle("INF ALL", function(no)
+    Tab:CreateToggle("Auto Upgrade Gem", function(no)
     _G.GetWins = no
     while _G.GetWins== true do
         wait() 
@@ -97,7 +97,7 @@ game:GetService("ReplicatedStorage").Events.Upgrade.GemUpgrade:FireServer(unpack
     end
     end)
 
-    Tab:CreateToggle("INF ALL", function(no)
+    Tab:CreateToggle("Auto Mines", function(no)
     _G.GetWins = no
     while _G.GetWins== true do
         wait() 
